@@ -1,0 +1,9 @@
+
+apply plugin: 'java'
+
+task (run, dependsOn: 'jar', type: JavaExec) {
+   classpath = files('build/libs/jar.jar')
+   classpath += sourceSets.main.runtimeClasspath
+   main = 'Main'
+}
+
