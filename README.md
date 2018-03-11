@@ -22,6 +22,6 @@ cd ~/Workspaces/jar
 
 ## Run in Docker Container
 ```
-cd ~/Workspaces/class
+cd ~/Workspaces/jar
 docker run -v `pwd`:/tmp -it --rm openjdk:8u151-jre-alpine3.7 "/tmp/docker-run.sh"
 ```
